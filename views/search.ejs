@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+
+<div class="container">
+    <div class="img-thumbnail">
+        <h1 class="text-center">Search for a Movie</h1>
+        <hr>
+        <form class="form-group" action="/result" method="GET">
+            <input class="form-control" type="text" placeholder="Search Item" name="term">
+            <input class="btn btn-primary btn-block" type="submit">
+        </form>
+    </div>
+</div>
+
+<% include partials/footer %>

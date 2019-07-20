@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="img-thumbnail">
+            <h1 class="text-center">Results Page</h1>
+
+            <% parseBody["Search"].forEach(function(movie){ %>
+                <li><strong><%= movie["Title"]%></strong> - <%= movie["Year"] %></li>
+            <% }) %>
+            
+            <a href="/" class="btn btn-primary btn-sm">Search Again!</a>
+    </div>
+</div>
+
+
+<% include partials/footer %>
